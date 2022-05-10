@@ -128,7 +128,25 @@ class HomePage extends StatelessWidget {
                       style: TitleTextStyle.copyWith(fontSize: 12),
                     ),
                     SizedBox(height: 8),
-                    Image.asset('assets/icon/Star.png', width: 16, height: 16),
+                    Row(
+                      children: [
+                        Image.asset('assets/icon/Star.png',
+                            width: 16, height: 16),
+                        Image.asset('assets/icon/Star.png',
+                            width: 16, height: 16),
+                        Image.asset('assets/icon/Star.png',
+                            width: 16, height: 16),
+                        Image.asset('assets/icon/Star.png',
+                            width: 16, height: 16),
+                        Image.asset('assets/icon/Star.png',
+                            width: 16, height: 16),
+                        SizedBox(width: 5),
+                        Text(
+                          '(4016)',
+                          style: medium,
+                        ),
+                      ],
+                    ),
                   ],
                 ),
                 Row(
@@ -151,8 +169,25 @@ class HomePage extends StatelessWidget {
                           style: TitleTextStyle.copyWith(fontSize: 12),
                         ),
                         SizedBox(height: 8),
-                        Image.asset('assets/icon/Star.png',
-                            width: 16, height: 16),
+                        Row(
+                          children: [
+                            Image.asset('assets/icon/Star.png',
+                                width: 16, height: 16),
+                            Image.asset('assets/icon/Star.png',
+                                width: 16, height: 16),
+                            Image.asset('assets/icon/Star.png',
+                                width: 16, height: 16),
+                            Image.asset('assets/icon/Star.png',
+                                width: 16, height: 16),
+                            Image.asset('assets/icon/Star.png',
+                                width: 16, height: 16),
+                            SizedBox(width: 5),
+                            Text(
+                              '(1055)',
+                              style: medium,
+                            ),
+                          ],
+                        )
                       ],
                     ),
                   ],
@@ -160,33 +195,43 @@ class HomePage extends StatelessWidget {
               ],
             ),
             SizedBox(height: 50),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  'Articles',
-                  style: TitleTextStyle.copyWith(fontSize: 14),
-                ),
-                Text('Show all',
-                    style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.w400,
-                        color: Color(0xff006EEE),
-                        fontSize: 10))
-              ],
-            ),
             Column(
               children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Articles',
+                      style: TitleTextStyle.copyWith(fontSize: 14),
+                    ),
+                    Text('Show all',
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w400,
+                            color: Color(0xff006EEE),
+                            fontSize: 10))
+                  ],
+                ),
                 Row(
                   children: [
                     Image.asset(
                       'assets/images/img.png',
-                      width: 175,
-                      height: 170,
+                      width: 86,
+                      height: 80,
                     ),
-                    Text(
-                      'How to: Work faster as \nFull Stack Designer',
-                      style: TitleTextStyle.copyWith(fontSize: 12),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'How to: Work faster as \nFull Stack Designer',
+                          style: TitleTextStyle.copyWith(fontSize: 12),
+                        ),
+                        Text(
+                          'UI Design',
+                          style: medium,
+                        )
+                      ],
                     ),
+                    Spacer(),
                     Image.asset('assets/icon/icon_love.png', width: 16),
                   ],
                 ),
@@ -194,13 +239,23 @@ class HomePage extends StatelessWidget {
                   children: [
                     Image.asset(
                       'assets/images/img_(1).png',
-                      width: 175,
-                      height: 170,
+                      width: 86,
+                      height: 80,
                     ),
-                    Text(
-                      'How to: Digital Art from \nSketch',
-                      style: TitleTextStyle.copyWith(fontSize: 12),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'How to: Digital Art from \nSketch',
+                          style: TitleTextStyle.copyWith(fontSize: 12),
+                        ),
+                        Text(
+                          'Art Course',
+                          style: medium,
+                        )
+                      ],
                     ),
+                    Spacer(),
                     Image.asset('assets/icon/Frame_16.png', width: 16),
                   ],
                 )
